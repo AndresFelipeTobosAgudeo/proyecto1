@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>ANDRES FELIPE TOBOS AGUDELO</title>
+    </h:head>
+    <h:body>
+        <h:form>
+        <p>Andres Felipe Tobos Agudelo</p>
+        <p:panel id="basic" header="Ciclista" footer="Andres Felipe Tobos Agudelo" style="margin-bottom:20px">
+            <p:button value="Nairo" icon="pi pi-star" style="margin-right:20px;">
+                <f:param name="productId" value="10" />
+            </p:button>
+            <p:button value="Egan" icon="pi pi-star" style="margin-right:20px;">
+                <f:param name="productId" value="10" />
+            </p:button>
+            <p:button value="Rigoberto" icon="pi pi-star" style="margin-right:20px;">
+                <f:param name="productId" value="10" />
+            </p:button>
+            <p:commandButton value="Agregar" id="ajax"  action="#{arraqueMB.mensaje()}" style="margin-right:20px;" styleClass="ui-priority-primary" />
+              <p:breadCrumb>
+                    <p:menuitem value="Categorias" url="#" />
+                    <p:menuitem value="Equipos" url="#" />
+                    <p:menuitem value="Movistar Team" url="#" />
+                    <p:menuitem value="Team Ineos" url="#" />
+                    <p:menuitem value="Astana" url="#" />
+                    <p:menuitem value="Team Jumbo Visma" url="#" />
+                </p:breadCrumb>
+            
+            
+            <p:growl id="growl" showDetail="true" sticky="true" />  
+       
+    <p:panel header="Reporte">  
+        <h:panelGrid columns="2" cellpadding="5">  
+            <p:outputLabel for="msg" value="Mensaje:" />   
+            <p:inputText id="msg" value="#{growlView.message}" required="true" />  
+        </h:panelGrid>  
+   
+        <p:commandButton value="Guardar" action="#{growlView.saveMessage}" update="@form" />
+    </p:panel>     
+            
+        </p:panel>
+   
+          </h:form>
+    </h:body>
+</html>
+
