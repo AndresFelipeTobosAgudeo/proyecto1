@@ -12,10 +12,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.List;
 
-/**
- *
- * @author Sala 30
- */
+
 public class OperacionCiclis {
     
     public int crear(Ciclista dato){

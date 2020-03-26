@@ -10,10 +10,6 @@ import co.felipe.dao.OperacionCiclis;
 import co.felipe.dato.Ciclista;
 import javax.inject.Named;
 
-/**
- *
- * @author Sala 30
- */
 @Named(value = "arraqueMB")
 public class ArraqueMB {
 

@@ -1,9 +1,6 @@
 package co.felipe.dato;
 
-/**
- *
- * @author Sala 30
- */
+
 public class Ciclista {
     private String Nombre;
     private int Edad;
